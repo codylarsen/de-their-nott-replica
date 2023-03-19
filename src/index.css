@@ -2,6 +2,7 @@
   display: flex;
   padding: 16px 16px 24px;
   z-index: 1;
+  margin-bottom: 50px;
 }
 
 .logo-header {
@@ -70,3 +71,119 @@
   text-align: left;
   width: 100%;
 }
+
+.property {
+  position: relative;
+  z-index: 2;
+}
+
+.fraser {
+  padding-left: 51vw;
+  max-width: 60vh;
+}
+
+.fraser-image img {
+  width: 100%;
+}
+
+.primary-image {
+  filter: grayscale(100%);
+}
+
+.primary-image:hover {
+  cursor: pointer;
+  filter: grayscale(0%);
+}
+
+.fraser-details {
+  display: flex;
+}
+
+.fraser-name {
+  width: 90%;
+}
+
+.lightbox {
+  position: fixed;
+  display: none;
+  justify-content: center;
+  z-index: 3;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+}
+
+.lightbox-image-container {
+  position: relative;
+  display: flex;
+  height: 80vh;
+}
+
+.lightbox-image {
+  width: 100%;
+  height: 90%;
+  max-width: 90vw;
+  max-height: 90vh;
+  position: absolute;
+  object-fit: contain;
+  transition: opacity 1s ease-in-out;
+  opacity: 0;
+}
+
+.left-arrow {
+  color: white;
+  height: 100%;
+  width: 50px;
+  z-index: 5;
+  margin-left: 20px;
+  padding-top: 50vh;
+}
+
+.right-arrow {
+  color: white;
+  height: 100%;
+  width: 50px;
+  z-index: 5;
+  padding-top: 50vh;
+}
+
+.lightbox-counter {
+  color: white;
+  display: flex;
+  justify-content: right;
+  margin-top: 40px;
+  width: 85vw;
+}
+
+.left-arrow:hover {
+  cursor: pointer;
+}
+
+.right-arrow:hover {
+  cursor: pointer;
+}
+
+.lightbox-exit {
+  float: right;
+  flex: 1;
+  z-index: 5;
+  position: relative;
+  margin: 50px 50px 0 0;
+  color: white;
+}
+
+.lightbox-exit:hover {
+  cursor: pointer;
+}
+
+.first-lightbox-image {
+  opacity: 1;
+}
+
+.lightbox-images {
+  width: 100%;
+  margin-top: 100px;
+}
+
